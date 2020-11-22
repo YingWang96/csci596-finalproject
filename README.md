@@ -6,4 +6,6 @@
   3. node points imposed along the string
   4. update of the amplitude at discrete time steps
 - The equation to be solved in the program: 1D wavefunction
-   A(i,t+1) = (2.0 * A(i,t)) - A(i,t-1) + (c * (A(i-1,t) - (2.0 * A(i,t)) + A(i+1,t))), where A is the amplitude along the y axis, c is a constant, which can be tuned in the calculation
+   A(i,t+1) = (2.0 * A(i,t)) - A(i,t-1) + (c * (A(i-1,t) - (2.0 * A(i,t)) + A(i+1,t))), where A is the amplitude along the y axis, c is a constant, which can be tuned in the calculation. The amplitude will depend on previous timesteps (t, t-1) and neighboring points (i-1, i+1).
+
+![alt text](image.jpg)
