@@ -17,7 +17,8 @@
  * LAST REVISED: 07/05/05
  * modified by Ying Wang (from MPI to MPI + OpenMP)
 ***************************************************************************/
-#include "mpi.h"
+#include <mpi.h>
+#include <omp.h> //
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -212,12 +213,23 @@ void output_workers(void) {
 
 int main (int argc, char *argv[])
 {
+	//  shared variables among all thread
 int left, right, rc;
 
 /* Initialize MPI */
 MPI_Init(&argc,&argv);
 MPI_Comm_rank(MPI_COMM_WORLD,&taskid);
 MPI_Comm_size(MPI_COMM_WORLD,&numtasks);
+omp_set_num_threads(2);
+#pragma omp parallel private(tid) // tid: figure out the meaning and the function of tid
+{
+  int i;
+  double x;
+  nthreads = omp_get_num_threads();
+  tid = omp_get_thread_num();
+}	// the part needs to be refined
+
+
 if (numtasks < 2) {
   printf("ERROR: Number of MPI tasks set to %d\n",numtasks);
   printf("Need at least 2 tasks!  Quitting...\n");
@@ -255,7 +267,7 @@ if (taskid == MASTER)
    output_master();
 else
    output_workers();
-
+MPI_Allreduce(&pi,&pig,1,MPI_DOUBLE,MPI_SUM,MPI_COMM_WORLD); // Inter-thread reduction Inter-rank reduction
 MPI_Finalize();
 return 0;
 }
