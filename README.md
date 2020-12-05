@@ -9,3 +9,10 @@
    A(i,t+1) = (2.0 * A(i,t)) - A(i,t-1) + (c * (A(i-1,t) - (2.0 * A(i,t)) + A(i+1,t))), where A is the amplitude along the y axis, c is a constant, which can be tuned in the calculation. The amplitude will depend on previous timesteps (t, t-1) and neighboring points (i-1, i+1).
 
 ![699px-Particle_in_a_box_wavefunctions svg](https://user-images.githubusercontent.com/72051087/99919070-f8dcbb80-2ccf-11eb-8abf-a1fce3f2422f.png)
+
+-Pieces of work can be performed concurrently
+ 1. specify
+ 
+-utilize two CPU cores and two GPU devices on each compute node. This is achieved by launching one MPI rank per node, where each rank spawns two OpenMP threads that run on different CPU cores and use different GPU devices.
+
+ 
