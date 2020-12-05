@@ -10,8 +10,14 @@
 
 ![699px-Particle_in_a_box_wavefunctions svg](https://user-images.githubusercontent.com/72051087/99919070-f8dcbb80-2ccf-11eb-8abf-a1fce3f2422f.png)
 
--Pieces of work can be performed concurrently
- 1. specify
+###This is an example of a problem involving data dependencies. A parallel solution will involve communications and synchronization.The entire amplitude array is partitioned and distributed as subarrays to all tasks. Each task owns an equal portion of the total array.
+
+- Steps to construct a parallel program
+  1. Identify what pieces of work can be performed concurrently. 
+  2. Partition concurrent work onto independent processors. 
+  3. Distribute a program’s input, output, and intermediate data
+  4. Coordinate accesses to shared data: avoid conflicts: Ensure proper order of work using synchronization
+
  
 -utilize two CPU cores and two GPU devices on each compute node. This is achieved by launching one MPI rank per node, where each rank spawns two OpenMP threads that run on different CPU cores and use different GPU devices.
 
