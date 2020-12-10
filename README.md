@@ -19,6 +19,10 @@
   4. Coordinate accesses to shared data: avoid conflicts: Ensure proper order of work using synchronization
 
  
--utilize two CPU cores and two GPU devices on each compute node. This is achieved by launching one MPI rank per node, where each rank spawns two OpenMP threads that run on different CPU cores and use different GPU devices.
+-utilizing two nodes and eight threads on each node. This is achieved by launching one MPI rank per node, where each rank spawns eight OpenMP threads that run on different CPU cores and use different GPU devices.
+
+##Result
+- The following figure shows the results of running the code mpi_wave.c 100, 500, 1000, 5000, 10000 timesteps.
+
 
  
