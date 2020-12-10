@@ -23,6 +23,7 @@
 
 ##Result
 - The following figure shows the results of running the code mpi_wave.c 100, 500, 1000, 5000, 10000 timesteps.
+![Test Image 4]()
 
 
  
