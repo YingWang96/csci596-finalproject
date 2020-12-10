@@ -1,0 +1,109 @@
+Starting mpi_wave using 2 tasks.
+Using 800 points on the vibrating string.
+Enter number of time steps (1-10000):
+500
+master part finishednumtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 1
+k= 0
+task=  0 tid=  0 first point=    1  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 351
+k= 350
+task=  0 tid=  7 first point=  351  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 301
+k= 300
+task=  0 tid=  6 first point=  301  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 251
+k= 250
+task=  0 tid=  5 first point=  251  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 201
+k= 200
+task=  0 tid=  4 first point=  201  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 151
+k= 150
+task=  0 tid=  3 first point=  151  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 101
+k= 100
+task=  0 tid=  2 first point=  101  npoints= 400
+This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00first: 51
+k= 50
+task=  0 tid=  1 first point=   51  npoints= 400
+This is a test
+workers part finishednumtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+numtasks: 2
+nmin: 400
+nleft: 0
+npts: 400
+width: 50fac= 6.283185e+00This is a test
+
