@@ -25,7 +25,7 @@
 - The following figure shows the results of running the code mpi_wave.c 100, 500, 1000, 5000, 10000 timesteps.
 ![mpi-results](https://user-images.githubusercontent.com/72051087/101733957-77797d00-3a74-11eb-983e-c8b148f09feb.png)
 - The problem with the mpi_OpenMP.c code. Finally, I can't make it output the correct result. This code has the problem with initialize the amplitude along the line. I also attached the output of mpi_OpenMP.c file. It shows that it stucks in proceeding by the second rank.
-- Due to the incompleteness of moi_OpenMP.c, I can't refine the original mp
+- Due to the incompleteness of moi_OpenMP.c, I can't refine the original mpi_wave.c to a hybrid MPI + OpenMP + CUDA code.
 
 
 
