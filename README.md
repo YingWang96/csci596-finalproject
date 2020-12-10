@@ -23,7 +23,8 @@
 
 ##Result
 - The following figure shows the results of running the code mpi_wave.c 100, 500, 1000, 5000, 10000 timesteps.
-![Test Image 4](https://github.com/YingWang96/csci596-finalproject/issues/2)
+![mpi-results](https://user-images.githubusercontent.com/72051087/101733957-77797d00-3a74-11eb-983e-c8b148f09feb.png)
+
 
 
  
